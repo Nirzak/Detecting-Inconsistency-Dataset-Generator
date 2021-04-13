@@ -1,0 +1,11 @@
+# Data
+data.csv
+output
+
+# TEST
+*TEST*
+
+
+.venv/
+.vscode/
+__pycache__/
