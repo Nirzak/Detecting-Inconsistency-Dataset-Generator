@@ -242,7 +242,7 @@ if __name__ == "__main__":
     if args.nela_path is not None:
         df = load_from_raw_data(args.nela_path)
     else:
-        df = pd.read_csv(args.input_path, header=None, names=["headline", "body"])
+        df = pd.read_csv(args.input_path, header=None, names=["headline", "body"], encoding='utf-8')
     
     df["body"] = df.apply(lambda row: row["body"].replace("\xa0", " "), axis=1)
     df["paras"] = df.apply(lambda row: list(filter(None, row["body"].split("\n"))), axis=1)
