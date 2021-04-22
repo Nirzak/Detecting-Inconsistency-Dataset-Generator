@@ -14,9 +14,9 @@ from nltk.corpus import stopwords
 
 STOP_WORDS = stopwords.words('bengali')
 
-P_TRAIN = 0.85
-P_DEV = 0.075
-P_TEST = 0.075
+P_TRAIN = 0.70
+P_DEV = 0.15
+P_TEST = 0.15
 bnltk = NLTK_Tokenizer()
 
 def preprocess_body(body):
